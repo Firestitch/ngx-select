@@ -1,0 +1,7 @@
+<form>
+  <mat-form-field>
+    <mat-select placeholder="Multiple Select" multiple="true">
+      <mat-option *ngFor="let item of items" [value]="item.value">{{ item.name }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>

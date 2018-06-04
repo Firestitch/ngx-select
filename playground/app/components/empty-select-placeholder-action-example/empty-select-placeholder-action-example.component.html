@@ -1,0 +1,14 @@
+<form>
+  <mat-form-field>
+    <mat-select
+      [(ngModel)]="modal"
+      name="modal"
+      (change)="selectPlaceholderAction()"
+      placeholder="Empty Select with Placeholder and Add Action">
+
+      <mat-option *ngIf="!emptyItems.length">None Configured. <a href>Add Item</a></mat-option>
+      <mat-option *ngFor="let item of emptyItems" [value]="item.value">{{ item.name }}</mat-option>
+
+    </mat-select>
+  </mat-form-field>
+</form>
