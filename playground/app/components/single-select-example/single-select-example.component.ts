@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   templateUrl: 'single-select-example.component.html'
 })
 export class SingleSelectExampleComponent {
+
+  public model = null;
+
   public items = [
     { name: 'Item 1', value: 1 },
     { name: 'Item 2', value: 2 },

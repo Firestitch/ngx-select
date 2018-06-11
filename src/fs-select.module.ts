@@ -1,20 +1,23 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FsSelectComponent } from './components';
 import { MatSelectModule } from '@angular/material';
+
+import { FsSelectComponent } from './components';
+import { FsAllowNullDirective } from './directives';
 
 @NgModule({
   imports: [
     CommonModule,
-    MatSelectModule,
+    MatSelectModule
   ],
   exports: [
-    FsSelectComponent,
+    FsAllowNullDirective
   ],
   entryComponents: [
   ],
   declarations: [
     FsSelectComponent,
+    FsAllowNullDirective
   ],
   providers: [
   ],
@@ -22,7 +25,7 @@ import { MatSelectModule } from '@angular/material';
 export class FsSelectModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: FsSelectModule,
+      ngModule: FsSelectModule
     };
   }
 }
