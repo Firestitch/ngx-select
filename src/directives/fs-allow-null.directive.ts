@@ -18,8 +18,10 @@ export class FsAllowNullDirective implements OnInit, OnChanges {
 
   ngOnChanges(changes) {
     if (changes && changes.ngModel && changes.ngModel.currentValue == null) {
-      this.ngModel = '';
-      this.ngModelChange.emit(this.ngModel);
+      setTimeout(() => {
+        this.ngModel = '';
+        this.ngModelChange.emit(this.ngModel);
+      });
     }
   }
 }
