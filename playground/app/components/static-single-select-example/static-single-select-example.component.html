@@ -1,6 +1,7 @@
 <form>
   <mat-form-field>
-    <mat-select placeholder="Static Single Select">
+    <mat-select [(ngModel)]="model" placeholder="Static Single Select" name="model">
+      <mat-option value="">All</mat-option>
       <mat-option value="1">One</mat-option>
       <mat-option value="2">Two</mat-option>
       <mat-option value="3">Three</mat-option>

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatSelectModule } from '@angular/material';
 
 import { FsSelectComponent } from './components';
-import { FsAllowNullDirective } from './directives';
+import { MatSelectDirective } from './directives';
 
 @NgModule({
   imports: [
@@ -11,13 +11,13 @@ import { FsAllowNullDirective } from './directives';
     MatSelectModule
   ],
   exports: [
-    FsAllowNullDirective
+    MatSelectDirective
   ],
   entryComponents: [
   ],
   declarations: [
     FsSelectComponent,
-    FsAllowNullDirective
+    MatSelectDirective
   ],
   providers: [
   ],

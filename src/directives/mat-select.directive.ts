@@ -3,10 +3,10 @@ import { NgModel } from '@angular/forms';
 
 
 @Directive({
-    selector: '[fs-allow-null]',
+    selector: 'mat-select',
     providers: [NgModel]
 })
-export class FsAllowNullDirective implements OnInit, OnChanges {
+export class MatSelectDirective implements OnInit, OnChanges {
 
   @Input() public ngModel: any = null;
 
