@@ -15,6 +15,5 @@ export class SingleSelectExampleComponent {
     { name: 'Item 3', value: 3 }
   ];
 
-  constructor() {
-  }
+  constructor() {}
 }

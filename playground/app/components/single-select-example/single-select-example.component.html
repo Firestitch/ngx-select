@@ -1,7 +1,7 @@
 <form>
   <mat-form-field>
     <mat-select [(ngModel)]="model" placeholder="Single Select" name="single-select">
-      <mat-option value="">All</mat-option>
+      <mat-option>All</mat-option>
       <mat-option *ngFor="let item of items" [value]="item.value">{{ item.name }}</mat-option>
     </mat-select>
   </mat-form-field>

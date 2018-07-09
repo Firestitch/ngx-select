@@ -9,7 +9,6 @@ export class StaticSingleSelectExampleComponent {
 
   model = null;
 
-  constructor() {
-  }
+  constructor() {}
 
 }
