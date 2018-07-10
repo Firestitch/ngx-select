@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app/app.component';
-import { FsSelectModule } from '../src';
 import { AppMaterialModule } from './app/material.module';
 import { FsExampleModule } from '@firestitch/example';
 import {
@@ -22,7 +21,6 @@ import {
   bootstrap: [ AppComponent ],
   imports: [
     BrowserModule,
-    FsSelectModule,
     BrowserAnimationsModule,
     AppMaterialModule,
     FormsModule,
