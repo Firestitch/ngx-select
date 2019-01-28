@@ -1,12 +1,15 @@
-import './styles.scss';
-
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppComponent } from './app/app.component';
-import { AppMaterialModule } from './app/material.module';
+
 import { FsExampleModule } from '@firestitch/example';
+import { FsMessageModule } from '@firestitch/message';
+
+import { ToastrModule } from 'ngx-toastr';
+
+import { AppComponent } from './app.component';
+import { AppMaterialModule } from './material.module';
 import {
     StaticSingleSelectExampleComponent,
     SingleSelectExampleComponent,
@@ -14,7 +17,7 @@ import {
     EmptySelectWithPlaceholderExampleComponent,
     EmptySelectPlaceholderActionExampleComponent,
     ReadOnlySelectExampleComponent
-} from './app/components';
+} from './components';
 
 
 @NgModule({
@@ -24,7 +27,9 @@ import {
     BrowserAnimationsModule,
     AppMaterialModule,
     FormsModule,
-    FsExampleModule
+    FsMessageModule.forRoot(),
+    FsExampleModule.forRoot(),
+    ToastrModule.forRoot({ preventDuplicates: true }),
   ],
   entryComponents: [
 

@@ -18,7 +18,6 @@ export class MatSelectDirective implements OnInit, OnChanges {
 
 
   ngOnChanges(changes) {
-    debugger;
     if (changes && changes.ngModel && changes.ngModel.currentValue === undefined) {
       setTimeout(() => {
         //this.ngModel = null;
