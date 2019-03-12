@@ -11,12 +11,13 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './material.module';
 import {
-    StaticSingleSelectExampleComponent,
-    SingleSelectExampleComponent,
-    MultipleSelectExampleComponent,
-    EmptySelectWithPlaceholderExampleComponent,
-    EmptySelectPlaceholderActionExampleComponent,
-    ReadOnlySelectExampleComponent
+  StaticSingleSelectExampleComponent,
+  SingleSelectExampleComponent,
+  MultipleSelectExampleComponent,
+  EmptySelectWithPlaceholderExampleComponent,
+  EmptySelectPlaceholderActionExampleComponent,
+  ReadOnlySelectExampleComponent,
+  CustomSelectedItemSelectExampleComponent
 } from './components';
 
 
@@ -42,7 +43,8 @@ import {
     MultipleSelectExampleComponent,
     EmptySelectWithPlaceholderExampleComponent,
     EmptySelectPlaceholderActionExampleComponent,
-    ReadOnlySelectExampleComponent
+    ReadOnlySelectExampleComponent,
+    CustomSelectedItemSelectExampleComponent
   ],
   providers: [
   ],

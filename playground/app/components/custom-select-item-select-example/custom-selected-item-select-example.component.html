@@ -1,0 +1,23 @@
+<form>
+  <mat-form-field>
+    <mat-select [(ngModel)]="model" placeholder="Image/Icon Select" name="model">
+
+      <!-- custom way of the visualization -->
+      <mat-select-trigger *ngIf="model">
+        <div class="wrapper">
+          <img [src]="model.photo" class="avatar">
+          <span> {{ model.name }} </span>
+        </div>
+      </mat-select-trigger>
+
+      <mat-option *ngFor="let item of items" [value]="item">
+        <div class="wrapper">
+          <img [src]="item.photo" class="avatar">
+          <span> {{ item.name }} </span>
+        </div>
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>
+
+
