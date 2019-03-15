@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./custom-selected-item-select-example.component.scss']
 })
 export class CustomSelectedItemSelectExampleComponent {
+  public model = null;
 
   public items = [
     {
@@ -30,7 +31,7 @@ export class CustomSelectedItemSelectExampleComponent {
       photo: 'https://randomuser.me/api/portraits/women/8.jpg'
     }
 
-  ]
+  ];
 
   constructor() {}
 
