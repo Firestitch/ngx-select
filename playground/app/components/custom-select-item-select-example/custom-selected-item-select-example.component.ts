@@ -11,28 +11,27 @@ export class CustomSelectedItemSelectExampleComponent {
 
   public items = [
     {
+      name: 'Bobby Smith (Without Image)'
+    },
+    {
       name: 'Riley Henderson',
-      photo: 'https://randomuser.me/api/portraits/women/58.jpg'
+      image: 'https://randomuser.me/api/portraits/women/58.jpg'
     },
     {
       name: 'Francis Walters',
-      photo: 'https://randomuser.me/api/portraits/men/40.jpg'
+      image: 'https://randomuser.me/api/portraits/men/40.jpg'
     },
     {
       name: 'Catherine Kelley',
-      photo: 'https://randomuser.me/api/portraits/women/67.jpg'
+      image: 'https://randomuser.me/api/portraits/women/67.jpg'
     },
     {
       name: 'Brandy Black',
-      photo: 'https://randomuser.me/api/portraits/women/54.jpg'
+      image: 'https://randomuser.me/api/portraits/women/54.jpg'
     },
     {
       name: 'Lily Campbell',
-      photo: 'https://randomuser.me/api/portraits/women/8.jpg'
+      image: 'https://randomuser.me/api/portraits/women/8.jpg'
     }
-
   ];
-
-  constructor() {}
-
 }

@@ -1,23 +1,26 @@
 <form>
   <mat-form-field>
-    <mat-select [(ngModel)]="model" placeholder="Image/Icon Select" name="model">
+    <mat-select [(ngModel)]="model" placeholder="Select With Images" name="model" fsSelect>
+      <mat-option [value]="null">
+        None
+      </mat-option>
 
-      <!-- custom way of the visualization -->
       <mat-select-trigger *ngIf="model">
-        <div class="wrapper">
-          <img [src]="model.photo" class="avatar">
-          <span> {{ model.name }} </span>
-        </div>
+        <ng-container *ngTemplateOutlet="template;context:{ model: model }"></ng-container>
       </mat-select-trigger>
 
       <mat-option *ngFor="let item of items" [value]="item">
-        <div class="wrapper">
-          <img [src]="item.photo" class="avatar">
-          <span> {{ item.name }} </span>
-        </div>
+        <ng-container *ngTemplateOutlet="template;context:{ model: item }"></ng-container>
       </mat-option>
+
+      <ng-template #template let-model="model">
+        <img *ngIf="model.image" [src]="model.image" class="avatar">
+        <span>{{ model.name }}</span>
+      </ng-template>
     </mat-select>
+    <mat-hint>
+      Be sure to include @firestitch/select/styles.scss
+    </mat-hint>
   </mat-form-field>
 </form>
-
 

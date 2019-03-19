@@ -1,0 +1,33 @@
+.mat-select-panel {
+  .mat-option-text {
+    align-items: center;
+    display: flex;
+  }
+}
+
+mat-select,
+.mat-select-panel {
+
+  img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+}
+
+
+mat-select {
+
+  .mat-select-value-text {
+    img {
+      position: absolute;
+      top: -6px;
+    }
+
+    img + * {
+      margin-left: 30px;
+    }
+  }
+
+}

@@ -1,7 +1,7 @@
 {
   "name": "@firestitch/select",
   "description": "@firestitch/select",
-  "version": "0.1.6",
+  "version": "7.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Firestitch/ngx-select"
@@ -44,8 +44,7 @@
     "@angular/platform-browser-dynamic": "^7.2.1",
     "@angular/router": "^5.2.4",
     "@compodoc/compodoc": "^1.1.7",
-    "@firestitch/example": "^0.6.0",
-    "@firestitch/iframe": "^0.2.0",
+    "@firestitch/example": "^7.0.0",
     "@firestitch/message": "^0.2.0",
     "codelyzer": "^4.5.0",
     "cpx": "^1.5.0",
@@ -55,7 +54,7 @@
     "rxjs": "^6.3.3",
     "tsickle": "^0.34.0",
     "tslint": "^5.12.1",
-    "typescript": "^3.1.6",
+    "typescript": "3.1.6",
     "webpack": "^4.29",
     "webpack-dev-server": "^3.1.14",
     "zone.js": "^0.8.28"
