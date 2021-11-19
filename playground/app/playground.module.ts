@@ -19,6 +19,7 @@ import {
   ReadOnlySelectExampleComponent,
   CustomSelectedItemSelectExampleComponent
 } from './components';
+import { FsSelectModule } from '@firestitch/select';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import {
     BrowserAnimationsModule,
     AppMaterialModule,
     FormsModule,
+    FsSelectModule,
     FsMessageModule.forRoot(),
     FsExampleModule.forRoot(),
     ToastrModule.forRoot({ preventDuplicates: true }),

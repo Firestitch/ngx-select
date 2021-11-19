@@ -1,18 +1,14 @@
 import { NgModule } from '@angular/core';
 
+import { FsSelectDirective } from './directives/select/select.directive';
+
 @NgModule({
-  imports: [
-  ],
   exports: [
-  ],
-  entryComponents: [
+    FsSelectDirective
   ],
   declarations: [
-
-  ],
-  providers: [
+    FsSelectDirective
   ],
 })
 export class FsSelectModule {
-
 }
