@@ -6,8 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FsExampleModule } from '@firestitch/example';
 import { FsMessageModule } from '@firestitch/message';
 
-import { ToastrModule } from 'ngx-toastr';
-
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './material.module';
 import {
@@ -32,7 +30,6 @@ import { FsSelectModule } from '@firestitch/select';
     FsSelectModule,
     FsMessageModule.forRoot(),
     FsExampleModule.forRoot(),
-    ToastrModule.forRoot({ preventDuplicates: true }),
   ],
   entryComponents: [
 
