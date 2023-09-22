@@ -17,7 +17,7 @@ import {
   ReadOnlySelectExampleComponent,
   CustomSelectedItemSelectExampleComponent
 } from './components';
-import { FsSelectModule } from '@firestitch/select';
+import { FsSelectModule } from '../../src/public_api';
 
 
 @NgModule({
