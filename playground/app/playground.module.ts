@@ -21,32 +21,27 @@ import { FsSelectModule } from '../../src/public_api';
 
 
 @NgModule({
-  bootstrap: [ AppComponent ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppMaterialModule,
-    FormsModule,
-    FsSelectModule,
-    FsMessageModule.forRoot(),
-    FsExampleModule.forRoot(),
-  ],
-  entryComponents: [
-
-  ],
-  declarations: [
-    AppComponent,
-
-    StaticSingleSelectExampleComponent,
-    SingleSelectExampleComponent,
-    MultipleSelectExampleComponent,
-    EmptySelectWithPlaceholderExampleComponent,
-    EmptySelectPlaceholderActionExampleComponent,
-    ReadOnlySelectExampleComponent,
-    CustomSelectedItemSelectExampleComponent
-  ],
-  providers: [
-  ],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppMaterialModule,
+        FormsModule,
+        FsSelectModule,
+        FsMessageModule.forRoot(),
+        FsExampleModule.forRoot(),
+    ],
+    declarations: [
+        AppComponent,
+        StaticSingleSelectExampleComponent,
+        SingleSelectExampleComponent,
+        MultipleSelectExampleComponent,
+        EmptySelectWithPlaceholderExampleComponent,
+        EmptySelectPlaceholderActionExampleComponent,
+        ReadOnlySelectExampleComponent,
+        CustomSelectedItemSelectExampleComponent
+    ],
+    providers: []
 })
 export class PlaygroundModule {
 }
